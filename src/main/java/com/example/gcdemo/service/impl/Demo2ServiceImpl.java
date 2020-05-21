@@ -1,22 +1,15 @@
-package com.example.gcdemo.service;
+package com.example.gcdemo.service.impl;
 
+import com.example.gcdemo.service.Demo2Service;
 import com.example.gcdemo.service.dto.DemoDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
-
-/**
- * TODO
- *
- * @author karl.xiong
- * @date 2020/4/26
- */
 @Slf4j
 @Service
-public class DemoService {
+public class Demo2ServiceImpl implements Demo2Service {
 
+    @Override
     public void bizHandle() {
         DemoDTO demoDTO = new DemoDTO();
         byte[] data = new byte[512000];
