@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author karl.xiong
  * @date 2020/4/26
  */
-@Controller
+@RestController
 @RequestMapping("/test")
 public class DemoController {
 
