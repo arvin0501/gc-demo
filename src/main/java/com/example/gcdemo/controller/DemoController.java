@@ -30,7 +30,7 @@ public class DemoController {
 
     @RequestMapping("/demo2")
     public String demo2() {
-        demo2Service.bizHandle();
+        demo2Service.bizHandle2();
         return "success";
     }
 }

@@ -1,1 +1,1 @@
--Xms120m -Xmx120m -XX:SurvivorRatio=8
+-Xms120m -Xmx120m -XX:SurvivorRatio=8 -XX:+PrintGC -XX:+PrintGCDateStamps
