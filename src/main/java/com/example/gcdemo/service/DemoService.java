@@ -20,14 +20,16 @@ public class DemoService {
 
     public void bizHandle() {
         DemoDTO demoDTO = new DemoDTO();
+
         byte[] data = new byte[3072000];
         random.nextBytes(data);
         demoDTO.setData(data);
-        demoDTO.setMillis(System.currentTimeMillis());
+
         try {
-            Thread.sleep(1000);
+            Thread.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        demoDTO.setMillis(System.currentTimeMillis());
     }
 }
