@@ -5,8 +5,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.security.SecureRandom;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * TODO
@@ -22,14 +20,16 @@ public class DemoService {
 
     public void bizHandle() {
         DemoDTO demoDTO = new DemoDTO();
+
         byte[] data = new byte[3072000];
+        random.nextBytes(data);
         demoDTO.setData(data);
-        demoDTO.setRandom(random.nextInt());
+
         try {
-            Thread.sleep(1000);
+            Thread.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        log.info("11");
+        demoDTO.setMillis(System.currentTimeMillis());
     }
 }

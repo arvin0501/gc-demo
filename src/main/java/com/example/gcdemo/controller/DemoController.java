@@ -3,7 +3,6 @@ package com.example.gcdemo.controller;
 import com.example.gcdemo.service.Demo2Service;
 import com.example.gcdemo.service.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -30,7 +29,7 @@ public class DemoController {
 
     @RequestMapping("/demo2")
     public String demo2() {
-        demo2Service.bizHandle();
+        demo2Service.bizHandle2();
         return "success";
     }
 }

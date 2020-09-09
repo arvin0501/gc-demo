@@ -16,7 +16,7 @@ public class MainTest {
             demoDTO.setData(data);
             list.add(demoDTO);
             System.out.println(i);
-            Thread.sleep(1000);
+            Thread.sleep(500);
         }
     }
 }

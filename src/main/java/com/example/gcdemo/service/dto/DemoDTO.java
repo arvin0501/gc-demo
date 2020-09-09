@@ -14,5 +14,5 @@ public class DemoDTO {
 
     private byte[] data;
 
-    private Integer random;
+    private Long millis;
 }
